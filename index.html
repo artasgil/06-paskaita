@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Flex pavyzdys</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .flex-item1 {
+            width: 100%;
+            background-color: silver;
+
+        }
+
+        .flex-item2,
+        .flex-item3 {
+            width: 50%;
+
+        }
+
+
+        .flex-item4 {
+            width: 70%;
+        }
+
+        .flex-item5 {
+            width: 30%;
+        }
+
+        .flex-item6,
+        .flex-item7,
+        .flex-item8 {
+            width: 33.3%;
+        }
+
+        .flex-item9 {
+            width: 100%;
+        }
+
+        .zydra {
+            background-color: skyblue;
+
+        }
+
+        .zalia {
+            background-color: springgreen;
+        }
+
+        .rozine {
+            background-color: pink;
+        }
+
+        .flex-item1 {
+            order: 1;
+        }
+
+        .flex-item2 {
+            order: 2;
+        }
+
+        .flex-item3 {
+            order: 3;
+        }
+
+        .flex-item4 {
+            order: 4;
+        }
+
+        .flex-item5 {
+            order: 6;
+        }
+
+        .flex-item6 {
+            order: 5;
+
+
+        }
+
+        .flex-item7 {
+            order: 7;
+        }
+
+        .flex-item8 {
+            order: 8;
+        }
+
+
+        p {
+            font-size: 32px;
+        }
+
+        .kvadratelis {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin: 10px;
+        }
+
+        [class*="flex-item"] {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        @media screen and (max-width:720px) {
+            .flex-container {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            [class*="flex-item"] {
+                width: 100%;
+                order: 1;
+
+            }
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class=row>
+            <div class="col-12">
+
+                <h1>Flex pavyzdys</h1>
+                <div class="flex-container">
+                    <div class="flex-item1 zalia">
+                        <p>1</p>
+                        <div class="kvadratelis">
+                        </div>
+                        <div class="kvadratelis">
+                        </div>
+                        <div class="flex-item2 zydra">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="flex-item2 zydra">
+                        <p>2</p>
+                    </div>
+                    <div class="flex-item3 zalia">
+                        <p>3</p>
+                    </div>
+                    <div class="flex-item4 zydra">
+                        <p>4</p>
+                    </div>
+                    <div class="flex-item5 zydra">
+                        <p>5</p>
+                    </div>
+                    <div class="flex-item6 zydra">
+                        <p>6</p>
+                    </div>
+                    <div class="flex-item7 zalia">
+                        <p>7</p>
+                    </div>
+                    <div class="flex-item8 rozine">
+                        <p>8</p>
+                    </div>
+                    <div class="flex-item9 zydra">
+                        <p>9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
